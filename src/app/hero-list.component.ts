@@ -10,21 +10,11 @@ import { HeroService } from './hero.service';
 
 @Component({
     selector: 'my-hero-list',
-    template: `
-        <h2>HEROES</h2>
-        <ul class="items">
-            <li *ngFor="let hero of heroes | async"
-            [class.selected]="isSelected(hero)"
-            (click)="onSelect(hero)">
-            <span class="badge">{{ hero.id }}</span> {{ hero.name }}
-            </li>
-        </ul>
-
-        <button routerLink="/sidekicks">Go to sidekicks</button>
-    `
+    template: `./hero-list.component`
 })
 
 export class HeroListComponent implements OnInit {
+
     heroes: Observable<Hero[]>;
 
     private selectedId: number;
