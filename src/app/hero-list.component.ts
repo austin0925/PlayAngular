@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { Headers, RequestOptions } from '@angular/http';
+
 import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/observable';
 
@@ -37,5 +39,11 @@ export class HeroListComponent implements OnInit {
     isSelected(hero: Hero){
         return hero.id === this.selectedId;
     }
+
+    /*
+    addHero (name: string): Observable<Hero>{
+        return this.heroes;
+    }
+    */
 
 }
