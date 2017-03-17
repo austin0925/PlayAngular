@@ -3,13 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  templateUrl: './app.component.html'
+  template: `
+  <div class="container">
+    <h1>Reactive Forms</h1>
+    <hero-list></hero-list>
+  </div>`
 })
-export class AppComponent {
-  showHeading = true;
-  heroes = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
-
-  toggleHeading() {
-    this.showHeading = !this.showHeading;
-  }
-}
+export class AppComponent { }
