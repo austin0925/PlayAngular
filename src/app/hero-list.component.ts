@@ -1,31 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable }        from 'rxjs/Observable';
-import 'rxjs/add/operator/finally';
-
-import { Hero }        from './data-model';
-import { HeroService } from './hero.service';
+import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'hero-list',
-  templateUrl: 'hero-list.component.html'
+  template: `
+    <h2>Heroes from JSON File</h2>
+
+    <div *ngFor="let hero of ('heroes.json' | fetch) ">
+      {{hero.name}}
+    </div>
+
+    <p>Heroes as JSON:
+      {{'heroes.json' | fetch | json}}
+    </p>`
 })
-export class HeroListComponent implements OnInit {
-  heroes: Observable<Hero[]>;
-  isLoading = false;
-  selectedHero: Hero;
-
-  constructor(private heroService: HeroService) { }
-
-  ngOnInit() { this.getHeroes(); }
-
-  getHeroes() {
-    this.isLoading = true;
-    this.heroes = this.heroService.getHeroes()
-                      // Todo: error handling
-                      .finally(() => this.isLoading = false);
-    this.selectedHero = undefined;
-  }
-
-  select(hero: Hero) { this.selectedHero = hero; }
-}
+export class HeroListComponent { }

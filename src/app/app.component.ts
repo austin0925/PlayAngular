@@ -3,10 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'my-app',
-  template: `
-  <div class="container">
-    <h1>Reactive Forms</h1>
-    <hero-list></hero-list>
-  </div>`
+  templateUrl: './app.component.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  birthday = new Date(1988, 3, 15); // April 15, 1988
+}
