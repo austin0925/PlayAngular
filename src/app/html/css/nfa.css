@@ -1,0 +1,112 @@
+body {
+    font-family: 微軟正黑體,"open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:black;
+}
+.top-navigation .wrapper.wrapper-content {
+    padding: 20px 8px;
+}
+.nfa-bg {
+  background-color: #edf3f3;
+}
+.ibox-title {
+    background-color: #fff4e6;
+}
+.ibox-content {
+    background-color: #fffbf6;
+}
+.container {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1800px) {
+  .container {
+    width: 1750px;
+  }
+}
+.rwd-table {
+background: #fff;
+overflow: hidden;
+        }
+
+.rwd-table tr:nth-of-type(2n) {
+    background: #eee;
+}
+
+.rwd-table th, .rwd-table td {
+    margin: 0.5em 1em;
+}
+
+.rwd-table {
+	min-width: 100%;
+        }
+
+.rwd-table th {
+    display: none;
+}
+
+.rwd-table td {
+    display: block;
+}
+
+.rwd-table td:before {
+	content: attr(data-th) " : ";
+	font-weight: bold;
+	width: 10em;
+	display: inline-block;
+}
+
+.rwd-table th, .rwd-table td {
+    text-align: left;
+}
+
+.rwd-table th, .rwd-table td:before {
+	color: #0069d4;
+	font-weight: bold;
+}
+
+@media (min-width: 992px) {
+.rwd-table td:before {
+    display: none;
+}
+
+.rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+}
+
+    .rwd-table th:first-child, .rwd-table td:first-child {
+        padding-left: 0;
+    }
+
+    .rwd-table th:last-child, .rwd-table td:last-child {
+        padding-right: 0;
+    }
+
+.rwd-table th, .rwd-table td {
+    padding: 1em !important;
+}
+}
+.navbar {
+    min-height: 32px;
+}
+.navbar-brand {
+    height: 70px;
+}
+.top-navigation .navbar-brand {
+	background: none;
+    background-image: url(../img/EMIC.png);
+    background-size: 196px;
+	width: 196px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.top-navigation .nav > li > a {
+    padding: 5px 11px 8px 11px;
+}
+@media (min-width: 768px){
+.navbar-nav {
+    float: left;
+    margin: 0 0 0 170px;
+}}

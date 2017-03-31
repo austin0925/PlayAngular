@@ -16,12 +16,15 @@ import { HeroListComponent } from './hero-list.component';
 import { CrisislistComponent } from './crisis-list.component';
 import { NotFoundComponent } from './not-found.component';
 import { HeroSearchComponent } from './hero-search.component';
+import { NttcheckComponent } from './nttcheck.component';
+import { EracheckComponent } from './eracheck.component';
+import { Erareporta4Component } from './era-report-a4.component';
 
 import { HeroService} from './hero.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService) ],
-  declarations: [ AppComponent , HeroDetailComponent, HeroesComponent, DashboardComponent, HeroListComponent, CrisislistComponent, NotFoundComponent, HeroSearchComponent ],
+  declarations: [ AppComponent , HeroDetailComponent, HeroesComponent, DashboardComponent, HeroListComponent, CrisislistComponent, NotFoundComponent, HeroSearchComponent, NttcheckComponent, EracheckComponent, Erareporta4Component ],
   providers: [ HeroService ],
   bootstrap:    [ AppComponent ]
 })

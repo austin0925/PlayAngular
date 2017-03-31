@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMIC-A4-各直轄市縣市政府撤離人數通報表</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nfa.css" rel="stylesheet">
+</head>
+
+<body class="top-navigation">
+    <div id="wrapper">
+        <div id="page-wrapper" class="nfa-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+                        <a href="#" class="navbar-brand"></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-sign-out"></i> 登出
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a aria-expanded="false" role="button" href="layouts.html">回首頁</a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">書籤<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">應變中心<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">災情管理<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">通報／處置<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">通報表填寫</a></li>
+                                    <li><a href="">續報已撤除專案的通報表</a></li>
+                                    <li><a href="">填報狀況查詢</a></li>
+                                    <li><a href="">應變處置報告填寫</a></li>
+                                    <li><a href="">製作處置報告</a></li>
+                                    <li><a href="">通報表權限設定</a></li>
+                                    <li><a href="">處置報告權限設定</a></li>
+                                    <li><a href="">處置報告查詢</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">疏散收容<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">調度支援<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">通報傳送<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">資料服務<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">親友現況<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">設定<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" role="button" href="layouts.html">地理資訊平台</a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">災情影像<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">社群資訊<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">搜索救援<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">整合通訊<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" role="button" href="layouts.html">指揮官資訊</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>A4-各直轄市縣市政府撤離人數通報表</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <a class="btn btn-warning btn-sm" href="#">審核確認</a>
+                                    <a class="btn btn-danger btn-sm" href="#">刪除明細</a>
+                                    <a class="btn btn-primary btn-sm" href="#">匯入第N報</a>
+                                    <a class="btn btn-primary btn-sm" href="#">下層資料彙整</a>
+                                    <a class="btn btn-primary btn-sm" href="#">匯出Excel</a>
+                                    <a class="btn btn-info btn-sm" href="#">查看填寫紀錄</a>
+                                    <a class="btn btn-info btn-sm" href="#">查看撤離系統</a>
+                                    <a class="btn btn-info btn-sm" href="#">撤離人數統計表</a>
+                                    <a class="btn btn-success btn-rounded pull-right" routerLink="/eracheck">回上頁</a>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="row">
+                                        <div class="col-sm-3 b-r">
+                                            <h3 class="m-t-none m-b">災害名稱：105年5月EMIC演練中央專案</h3>
+                                            <h3 class="m-t-none m-b">通報別：第28報</h3>
+                                        </div>
+                                        <div class="col-sm-3 b-r">
+                                            <h3 class="m-t-none m-b">填報機關：</h3>
+                                            <input type="text" placeholder="輸入填報機關" class="form-control">
+                                            <h3 class="m-t-none m-b">通報時間：</h3>
+                                            <div class="form-group" id="data_1">
+                                                <div class="input-group date">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    <input type="text" class="form-control" value="03/04/2014">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 b-r">
+                                            <h3 class="m-t-none m-b">核定人：</h3>
+                                            <input type="text" placeholder="輸入核定人" class="form-control">
+                                            <h3 class="m-t-none m-b">通報人：</h3>
+                                            <input type="text" placeholder="輸入通報人" class="form-control">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h3 class="m-t-none m-b">聯絡電話：</h3>
+                                            <input type="text" placeholder="輸入聯絡電話" class="form-control">
+                                            <h3 class="m-t-none m-b">行動電話：</h3>
+                                            <input type="text" placeholder="輸入行動電話" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="rwd-table">
+                                                <tr>
+                                                    <th>報次</th>
+                                                    <th>直轄市縣</th>
+                                                    <th>鄉鎮市區別</th>
+                                                    <th>村里別</th>
+                                                    <th>地點</th>
+                                                    <th>預計撤離人數</th>
+                                                    <th>實際撤離人數</th>
+                                                    <th>累計撤離人數</th>
+                                                    <th>撤離時間</th>
+                                                    <th>收容處所</th>
+                                                    <th>備註</th>
+                                                    <th>登打時間</th>
+                                                    <th>功能</th>
+                                                </tr>
+                                                <tr>
+                                                    <td data-th="報次">1</td>
+                                                    <td data-th="直轄市縣">
+                                                        <select class="form-control" name="account">
+                                                            <option></option>
+                                                            <option>台北市</option>
+                                                            <option>新北市</option>
+                                                            <option>桃園市</option>
+                                                            <option>新竹縣</option>
+                                                            <option>苗栗縣</option>
+                                                        </select>
+                                                    </td>
+                                                    <td data-th="鄉鎮市區別">
+                                                        <select class="form-control" name="account">
+                                                            <option></option>
+                                                            <option>台北市</option>
+                                                            <option>新北市</option>
+                                                            <option>桃園市</option>
+                                                            <option>新竹縣</option>
+                                                            <option>苗栗縣</option>
+                                                        </select>
+                                                    </td>
+                                                    <td data-th="村里別">
+                                                        <select class="form-control" name="account">
+                                                            <option></option>
+                                                            <option>台北市</option>
+                                                            <option>新北市</option>
+                                                            <option>桃園市</option>
+                                                            <option>新竹縣</option>
+                                                            <option>苗栗縣</option>
+                                                        </select>
+                                                    </td>
+                                                    <td data-th="地點">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="預計撤離人數">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="實際撤離人數">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="累計撤離人數">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="撤離時間">
+                                                        2016/05/18&nbsp;15:44</td>
+                                                    <td data-th="收容處所">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="備註">
+                                                        <input type="text" class="form-control">
+                                                    </td>
+                                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                                    <td data-th="功能">
+                                                        <input type="submit" name="button5" id="button5" value="新增" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="rwd-table">
+                                <tr>
+                                    <th>報次</th>
+                                    <th>直轄市縣</th>
+                                    <th>鄉鎮市區別</th>
+                                    <th>村里別</th>
+                                    <th>地點</th>
+                                    <th>預計撤離人數</th>
+                                    <th>實際撤離人數</th>
+                                    <th>累計撤離人數</th>
+                                    <th>撤離時間</th>
+                                    <th>收容處所</th>
+                                    <th>備註</th>
+                                    <th>登打時間</th>
+                                    <th>功能</th>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">總計</td>
+                                    <td data-th="直轄市縣"></td>
+                                    <td data-th="鄉鎮市區別"></td>
+                                    <td data-th="村里別"></td>
+                                    <td data-th="地點"></td>
+                                    <td data-th="預計撤離人數">1,134</td>
+                                    <td data-th="實際撤離人數">91</td>
+                                    <td data-th="累計撤離人數">91</td>
+                                    <td data-th="撤離時間"></td>
+                                    <td data-th="收容處所"></td>
+                                    <td data-th="備註"></td>
+                                    <td data-th="登打時間"></td>
+                                    <td data-th="功能"></td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">1</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">八里區</td>
+                                    <td data-th="村里別">龍源里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">9</td>
+                                    <td data-th="實際撤離人數">3</td>
+                                    <td data-th="累計撤離人數">3</td>
+                                    <td data-th="撤離時間">2016/05/18&nbsp;15:44</td>
+                                    <td data-th="收容處所">龍米市民活動中心</td>
+                                    <td data-th="備註">&nbsp;前往收容所3人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">2</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">林口區</td>
+                                    <td data-th="村里別">下福里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">2</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;13:11</td>
+                                    <td data-th="收容處所">興福國小</td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">3</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">林口區</td>
+                                    <td data-th="村里別">嘉寶里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">2</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;13:28</td>
+                                    <td data-th="收容處所">嘉寶國小</td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">4</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">林口區</td>
+                                    <td data-th="村里別">林口里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">8</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;11:48</td>
+                                    <td data-th="收容處所">林口市民活動中心</td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">5</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">石門區</td>
+                                    <td data-th="村里別">富基里</td>
+                                    <td data-th="地點">2,14</td>
+                                    <td data-th="預計撤離人數">231</td>
+                                    <td data-th="實際撤離人數">0</td>
+                                    <td data-th="累計撤離人數">0</td>
+                                    <td data-th="撤離時間">2016/05/18&nbsp;16:49</td>
+                                    <td data-th="收容處所"></td>
+                                    <td data-th="備註"></td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">6</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">石門區</td>
+                                    <td data-th="村里別">富基里</td>
+                                    <td data-th="地點">15</td>
+                                    <td data-th="預計撤離人數">231</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/18&nbsp;16:55</td>
+                                    <td data-th="收容處所">富基里活動中心</td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">7</td>
+                                    <td data-th="直轄市縣">新北市</td>
+                                    <td data-th="鄉鎮市區別">雙溪區</td>
+                                    <td data-th="村里別">平林里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">11</td>
+                                    <td data-th="實際撤離人數">3</td>
+                                    <td data-th="累計撤離人數">3</td>
+                                    <td data-th="撤離時間">2016/05/19&nbsp;08:46</td>
+                                    <td data-th="收容處所">雙溪高中</td>
+                                    <td data-th="備註">&nbsp;前往收容所3人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">8</td>
+                                    <td data-th="直轄市縣">臺北市</td>
+                                    <td data-th="鄉鎮市區別">中山區</td>
+                                    <td data-th="村里別">行政里</td>
+                                    <td data-th="地點">1</td>
+                                    <td data-th="預計撤離人數">3</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;11:36</td>
+                                    <td data-th="收容處所">行政區民活動中心</td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">9</td>
+                                    <td data-th="直轄市縣">臺北市</td>
+                                    <td data-th="鄉鎮市區別">南港區</td>
+                                    <td data-th="村里別">南港里</td>
+                                    <td data-th="地點">5,10</td>
+                                    <td data-th="預計撤離人數">4</td>
+                                    <td data-th="實際撤離人數">2</td>
+                                    <td data-th="累計撤離人數">2</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;09:41</td>
+                                    <td data-th="收容處所"></td>
+                                    <td data-th="備註">&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="報次">10</td>
+                                    <td data-th="直轄市縣">臺北市</td>
+                                    <td data-th="鄉鎮市區別">文山區</td>
+                                    <td data-th="村里別">景東里</td>
+                                    <td data-th="地點"></td>
+                                    <td data-th="預計撤離人數">5</td>
+                                    <td data-th="實際撤離人數">5</td>
+                                    <td data-th="累計撤離人數">5</td>
+                                    <td data-th="撤離時間">2016/05/17&nbsp;10:50</td>
+                                    <td data-th="收容處所">景興國中</td>
+                                    <td data-th="備註">&nbsp;依親2人,&nbsp;自行離去1人,&nbsp;前往收容所2人</td>
+                                    <td data-th="登打時間">2016/12/16&nbsp;15:02</td>
+                                    <td data-th="功能">
+                                        <input type="submit" name="button5" id="button5" value="修改" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="13">
+                                        <br>說明：
+                                        <br> 　　一、「地點」請依執行撤離工作之現地情況酌予補充說明。(如「鄰」、「部落」或「聚落」等)。
+                                        <br> 　　二、「預計撤離人數」：請資料建置單位參考行政院農業委員會「土石流潛勢溪流影響範圍保全對象清冊」、經濟部「水災危險潛勢地區保全計畫之保全對象」之保全人數，及撤離範圍內戶籍人口數與常住人口數進行概估填寫。
+                                        <br> 　　三、「實際撤離人數」係指執行勸告撤離及強制撤離人數之合計數，請逐筆填寫各次撤離人數新增統計資料。
+                                        <br> 　　四、「撤離時間」指開始撤離之時間。
+                                        <br> 　　五、「收容處所」請填寫各收容中心內之撤離人數與其他自行安置之人數（例如：○○收容中心30人，其他親友/自理20人）。
+                                        <br> 　　六、請於「備註」中敘明「預計撤離人數」與「撤離人數」產生差異之實際情況（例如：受困災區○○人，行方不明○○人等）該區域之居民若不願撤離，必須動用公權力「強制撤離」者，並請於備註欄註明強制撤離人數。
+                                        <br> 　　七、原則上災害應變中心二級開設時應於每日6時、12時、18時、24時彙整更新，一級開設時應於每日3時、6時、9時、12時、15時、18時、21時、24時彙整更新；惟遇有撤離人數增加較多時，請即時填送並以電話先行聯繫(02-89114601、02-89114602)，以利彙報。
+                                        <br> 　　八、「核定人」欄係由單位該時段進駐災害應變中心最高職級者或其職務代理人簽章（名）。
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <!-- JSKnob -->
+    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+    <!-- Input Mask-->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- NouSlider -->
+    <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+    <!-- Switchery -->
+    <script src="js/plugins/switchery/switchery.js"></script>
+    <!-- IonRangeSlider -->
+    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <!-- MENU -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Color picker -->
+    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <!-- Image cropper -->
+    <script src="js/plugins/cropper/cropper.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        var $image = $(".image-crop > img")
+        $($image).cropper({
+            aspectRatio: 1.618,
+            preview: ".img-preview",
+            done: function(data) {
+                // Output the result data for cropping image.
+            }
+        });
+
+        var $inputImage = $("#inputImage");
+        if (window.FileReader) {
+            $inputImage.change(function() {
+                var fileReader = new FileReader(),
+                    files = this.files,
+                    file;
+
+                if (!files.length) {
+                    return;
+                }
+
+                file = files[0];
+
+                if (/^image\/\w+$/.test(file.type)) {
+                    fileReader.readAsDataURL(file);
+                    fileReader.onload = function() {
+                        $inputImage.val("");
+                        $image.cropper("reset", true).cropper("replace", this.result);
+                    };
+                } else {
+                    showMessage("Please choose an image file.");
+                }
+            });
+        } else {
+            $inputImage.addClass("hide");
+        }
+
+        $("#download").click(function() {
+            window.open($image.cropper("getDataURL"));
+        });
+
+        $("#zoomIn").click(function() {
+            $image.cropper("zoom", 0.1);
+        });
+
+        $("#zoomOut").click(function() {
+            $image.cropper("zoom", -0.1);
+        });
+
+        $("#rotateLeft").click(function() {
+            $image.cropper("rotate", 45);
+        });
+
+        $("#rotateRight").click(function() {
+            $image.cropper("rotate", -45);
+        });
+
+        $("#setDrag").click(function() {
+            $image.cropper("setDragMode", "crop");
+        });
+
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $('#data_2 .input-group.date').datepicker({
+            startView: 1,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('#data_3 .input-group.date').datepicker({
+            startView: 2,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('#data_4 .input-group.date').datepicker({
+            minViewMode: 1,
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#data_5 .input-daterange').datepicker({
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        var elem = document.querySelector('.js-switch');
+        var switchery = new Switchery(elem, {
+            color: '#1AB394'
+        });
+
+        var elem_2 = document.querySelector('.js-switch_2');
+        var switchery_2 = new Switchery(elem_2, {
+            color: '#ED5565'
+        });
+
+        var elem_3 = document.querySelector('.js-switch_3');
+        var switchery_3 = new Switchery(elem_3, {
+            color: '#1AB394'
+        });
+
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+
+        $('.demo1').colorpicker();
+
+        var divStyle = $('.back-change')[0].style;
+        $('#demo_apidemo').colorpicker({
+            color: divStyle.backgroundColor
+        }).on('changeColor', function(ev) {
+            divStyle.backgroundColor = ev.color.toHex();
+        });
+
+
+    });
+    var config = {
+        '.chosen-select': {},
+        '.chosen-select-deselect': {
+            allow_single_deselect: true
+        },
+        '.chosen-select-no-single': {
+            disable_search_threshold: 10
+        },
+        '.chosen-select-no-results': {
+            no_results_text: 'Oops, nothing found!'
+        },
+        '.chosen-select-width': {
+            width: "95%"
+        }
+    }
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+    $("#ionrange_1").ionRangeSlider({
+        min: 0,
+        max: 5000,
+        type: 'double',
+        prefix: "$",
+        maxPostfix: "+",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_2").ionRangeSlider({
+        min: 0,
+        max: 10,
+        type: 'single',
+        step: 0.1,
+        postfix: " carats",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_3").ionRangeSlider({
+        min: -50,
+        max: 50,
+        from: 0,
+        postfix: "°",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_4").ionRangeSlider({
+        values: [
+            "January", "February", "March",
+            "April", "May", "June",
+            "July", "August", "September",
+            "October", "November", "December"
+        ],
+        type: 'single',
+        hasGrid: true
+    });
+
+    $("#ionrange_5").ionRangeSlider({
+        min: 10000,
+        max: 100000,
+        step: 100,
+        postfix: " km",
+        from: 55000,
+        hideMinMax: true,
+        hideFromTo: false
+    });
+
+    $(".dial").knob();
+
+    $("#basic_slider").noUiSlider({
+        start: 40,
+        behaviour: 'tap',
+        connect: 'upper',
+        range: {
+            'min': 20,
+            'max': 80
+        }
+    });
+
+    $("#range_slider").noUiSlider({
+        start: [40, 60],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+            'min': 20,
+            'max': 80
+        }
+    });
+
+    $("#drag-fixed").noUiSlider({
+        start: [40, 60],
+        behaviour: 'drag-fixed',
+        connect: true,
+        range: {
+            'min': 20,
+            'max': 80
+        }
+    });
+    </script>
+</body>
+
+</html>

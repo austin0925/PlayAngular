@@ -8,7 +8,9 @@ import { DashboardComponent } from './dashboard.component';
 import { HeroListComponent } from './hero-list.component';
 import { CrisislistComponent } from './crisis-list.component';
 import { NotFoundComponent } from './not-found.component';
-
+import { NttcheckComponent } from './nttcheck.component';
+import { EracheckComponent } from './eracheck.component';
+import { Erareporta4Component } from './era-report-a4.component';
 
 const appRoutes: Routes = [
     {path: 'heroes', component: HeroesComponent},
@@ -16,6 +18,9 @@ const appRoutes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {path: 'detail/:id', component: HeroDetailComponent},
     {path: 'crisislist', component: CrisislistComponent},
+    {path: 'nttcheck', component: NttcheckComponent},
+    {path: 'eracheck', component: EracheckComponent},
+    {path: 'erareporta4', component: Erareporta4Component},
     {path: '**', component: NotFoundComponent}
 ];
 
