@@ -16,4 +16,13 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 
 ### example 
 
-![](https://goo.gl/photos/GbUkpvGY4PzKhrpn7)
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `<h1>Hello {{name}}</h1>`
+})
+export class AppComponent { name = 'Angular'; }
+
+```
