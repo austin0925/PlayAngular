@@ -155,4 +155,6 @@ export class TitleComponent {
   }
 }
 ```
+* 這邊要注意的是UserService的使用，這邊使用方式就是Dependency Injection
+* 所以Service這邊都需要加入notation @Injectable
 
