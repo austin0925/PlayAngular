@@ -22,6 +22,23 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 
 ![](readmeSrc/overview2.png)
 
+## Module
+
+### src/app/app.module.ts
+
+```typescript
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+@NgModule({
+  imports:      [ BrowserModule ],
+  providers:    [ Logger ],
+  declarations: [ AppComponent ],
+  exports:      [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Component
 
 ### example 
