@@ -20,7 +20,7 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 
 ## Architech
 
-![](https://drive.google.com/a/gms.ndhu.edu.tw/file/d/0B7d0eorLsnIlNmo2OElnV3YzQTg/view?usp=sharing)
+![](http://220.132.189.248:10080/austin-wang/angular-quickstart/blob/master/readmeSrc/overview2.png)
 
 ## Component
 
