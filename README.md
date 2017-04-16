@@ -21,7 +21,7 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 ## Architech
 
 ![](http://220.132.189.248:10080/austin-wang/angular-quickstart/blob/a44d51defb0dff914b9eca918355d88fa1cca37b/readmeSrc/overview2.png)
-<iframe width="560" height="315" src="http://220.132.189.248:10080/austin-wang/angular-quickstart/blob/a44d51defb0dff914b9eca918355d88fa1cca37b/readmeSrc/overview2.png" frameborder="0" allowfullscreen>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 
 ## Component
 
