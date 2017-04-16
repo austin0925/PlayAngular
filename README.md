@@ -15,3 +15,5 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 ## Component
 
 ### example 
+
+![](https://goo.gl/photos/GbUkpvGY4PzKhrpn7)
