@@ -68,3 +68,12 @@ export class AppComponent { name = 'Angular'; }
 <my-app>Loading AppComponent content here ...</my-app>
 
 ```
+
+### first module
+
+@NgModule decorator 需要先定義好，並且把相關使用到的元件一併載入。
+
+* imports - modules (ex: NgIf, NgFor...)
+* declarations - components (the root component, the top of the app's component tree)
+* bootstrap - host web page
+
