@@ -77,3 +77,48 @@ export class AppComponent { name = 'Angular'; }
 * declarations - components (the root component, the top of the app's component tree)
 * bootstrap - host web page
 
+### src/main.ts (dynamic)
+```typescript
+
+// The browser platform with a compiler
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+// The app module
+import { AppModule } from './app/app.module';
+
+// Compile and launch the module
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+
+## Declare directives and components
+
+### src/app/highlight.directive.ts
+
+```typescript
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({ selector: '[highlight]' })
+/** Highlight the attached element in gold */
+export class HighlightDirective {
+  constructor(el: ElementRef) {
+    el.nativeElement.style.backgroundColor = 'gold';
+    console.log(
+      `* AppRoot highlight called for ${el.nativeElement.tagName}`);
+  }
+}
+```
+
+
+```typescript
+template: '<h1 highlight>{{title}}</h1>'
+```
+這邊的程式碼是指定在directive使用的使用位置
+
+
+```typescript
+declarations: [
+  AppComponent,
+  HighlightDirective,
+],
+```
+Directive也需要一起宣告
