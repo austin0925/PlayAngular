@@ -39,6 +39,14 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppModule { }
 ```
 
+### src/main.ts
+```typescript
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+
 ## Component
 
 ### example 
