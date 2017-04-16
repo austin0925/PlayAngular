@@ -178,4 +178,16 @@ providers: [ UserService ],
 <li (click)="selectHero(hero)"></li>
 ```
 
-# quick start
+# practice
+
+## npm 
+
+npm 是 node.js 的套件管理工具，要先安裝[node](https://nodejs.org/en/download/)。
+
+`npm install`  根據專案內使用套件的設定進行安裝
+`npm start`    根據專案內的啟動腳本進行啟動
+
+因為已經啟動了 browser sync，所以直接修改就可以看到結果。
+
+按照quick start 動作就可以完成 hero list project...
+
