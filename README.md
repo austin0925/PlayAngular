@@ -1,5 +1,7 @@
 # [angular quick start](https://github.com/angular/quickstart)
 
+## Introduce
+
 angular2 現在已經完全整併成angular所以沒有angular 1了
 
 angular 的基本語法是 [typescript](https://goo.gl/ASPxWm)
@@ -11,6 +13,14 @@ typescript 是微軟2014 發表的技術，可以看一下官網的[宣傳影片
 把 javascirpt的語法做了目前物件導向完整的強化，當然也支援各種技術。
 
 另外angular也提供了[github專案](https://github.com/angular/quickstart)，可以快速載下來啟動。
+
+## Editor
+
+* [VSCODE](https://code.visualstudio.com/)也是微軟提供出來很強大的編輯器
+
+## Architech
+
+![](https://drive.google.com/a/gms.ndhu.edu.tw/file/d/0B7d0eorLsnIlNmo2OElnV3YzQTg/view?usp=sharing)
 
 ## Component
 
