@@ -166,7 +166,16 @@ providers: [ UserService ],
 
 ## Data binding
 
-### 
+![](readmeSrc/databinding.png)
+* Interpolation - {{value}} 
+* Property binding - [property] 
+* Event binding - (click) 
 
+### src/app/hero-list.component.html (binding)
+```typescript
+<li>{{hero.name}}</li>
+<hero-detail [hero]="selectedHero"></hero-detail>
+<li (click)="selectHero(hero)"></li>
+```
 
-
+# quick start
