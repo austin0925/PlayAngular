@@ -1,4 +1,9 @@
-<h2>NTT CHECKER</h2>
-<p>Get your checker here</p>
-<canvas id="imageView" width="500" height="200"  style="border:1px solid #000000;"></canvas>
-<!--<signature-pad [options]="options" (onBeginEvent)="drawBegin()" (onEndEvent)="drawComplete()"></signature-pad>-->
+<h1>
+    {{title}}
+</h1>
+
+<form  (submit)="submit()" (window:resize)="beResponsive()">
+    <!--<h2>NTT CHECKER {{title}}</h2>
+    <p>Get your checker here</p>
+    <canvas id="imageView" width="500" height="200"  style="border:1px solid #000000;"></canvas>-->
+</form>

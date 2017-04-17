@@ -22,8 +22,7 @@ import { Erareporta4Component } from './era-report-a4.component';
 
 import { HeroService} from './hero.service';
 
-/*import { SignaturePadModule } from 'angular2-signaturepad/signature-pad';*/
-
+import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService) ],
